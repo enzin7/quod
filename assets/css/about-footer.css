@@ -1,0 +1,136 @@
+.about {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.about__mensagem {
+  background-color: var(--cor-principal);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  height: 26rem;
+  max-width: 60rem;
+  padding-left: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
+
+.about__mensagem__conteudo {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  gap: 1rem;
+}
+
+.about__mensagem__titulo {
+  color: var(--cor-cinza-sobre);
+}
+
+.about__mensagem__titulo__subtitulo {
+  font-weight: normal;
+  color: var(--cor-cinza);
+  margin-top: -0.5rem;
+}
+
+.about__mensagem__texto {
+  color: var(--cor-cinza-sobre);
+}
+
+.about__imagem {
+  height: 26rem;
+  border-radius: 0 5px 5px 0;
+  display: flex;
+}
+
+.sobre-rodape {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 55rem;
+  height: 32rem;
+  border: none;
+  display: none;
+  background: none;
+}
+
+.sobre-rodape iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 1280px) {
+  .about__mensagem {
+    height: 32rem;
+    width: 55rem;
+  }
+
+  .about__imagem {
+    height: 32rem;
+  }
+
+  .sobre-rodape {
+    height: 32rem;
+    width: 55rem;
+  }
+}
+
+@media screen and (max-width: 870px) {
+  .about__mensagem {
+    height: 25rem;
+  }
+
+  .about__mensagem__conteudo {
+    padding-right: 1rem;
+  }
+
+  .about__imagem {
+    display: none;
+  }
+
+  .sobre-rodape {
+    height: 25rem;
+    width: 45rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about__mensagem {
+    height: 30rem;
+  }
+
+  .about__mensagem__conteudo {
+    font-size: 0.9rem;
+  }
+
+  .sobre-rodape {
+    height: 30rem;
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  .sobre-rodape {
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .about__mensagem {
+    height: 30rem;
+  }
+
+  .about__mensagem__conteudo {
+    font-size: 0.8rem;
+  }
+
+  .sobre-rodape {
+    height: 30rem;
+    width: 18rem;
+  }
+}

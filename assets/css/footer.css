@@ -83,9 +83,10 @@
 
 @media screen and (max-width: 1024px) {
   .rodape__conteudo {
-    margin: 4rem;
+    margin: 1rem 4rem;
     flex-direction: column;
-    gap: 6rem;
+    gap: 3rem;
+    padding-bottom: 0;
   }
 
   .copyI {
@@ -94,6 +95,10 @@
 
   .copyII {
     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: -1.5rem;
   }
 }
 
@@ -101,7 +106,7 @@
   .rodape__conteudo {
     margin-top: 1rem;
     flex-direction: column;
-    gap: 6rem;
+    gap: 3rem;
   }
 }
 
