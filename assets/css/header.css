@@ -17,6 +17,11 @@
   gap: 1.6rem;
 }
 
+.menu-hamburguer-botao {
+  border: none;
+  display: none;
+}
+
 .menu-hamburguer {
   background-image: url(/assets/img/Menu.svg);
   width: 24px;
@@ -79,13 +84,14 @@
 }
 
 .lista-menu {
-  /* display: none; */
+  display: none;
   position: absolute;
   top: 95%;
   width: 40vw;
   list-style: none;
   box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.1);
   z-index: 1;
+  margin-left: -1rem;
 }
 
 .lista-menu__item {
@@ -151,6 +157,7 @@
     align-items: center;
   }
 
+  .menu-hamburguer-botao,
   .menu-hamburguer {
     display: block;
   }
@@ -161,10 +168,6 @@
 
   .principal {
     display: none;
-  }
-
-  .lista-menu {
-    margin-left: -1rem;
   }
 }
 
