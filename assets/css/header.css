@@ -19,6 +19,7 @@
 
 .menu-hamburguer-botao {
   border: none;
+  background-color: none;
   display: none;
 }
 
