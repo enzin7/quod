@@ -90,6 +90,10 @@
     padding-bottom: 0;
   }
 
+  .rodape__conteudo__links__slogan {
+    margin-bottom: -1.8rem;
+  }
+
   .copyI {
     display: none;
   }
