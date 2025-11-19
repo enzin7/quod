@@ -25,16 +25,16 @@
   gap: 0;
 }
 
-.navegacao_rodape {
-  margin-top: 1.5rem;
-}
-
 .rodape__conteudo__links__imagem {
   height: 4.5rem;
 }
 
 .rodape__conteudo__links__slogan {
   font-weight: var(--fonte-weight);
+}
+
+.navegacao_rodape {
+  margin-top: 1.5rem;
 }
 
 .rodape__conteudo__links__lista {
@@ -45,6 +45,7 @@
   text-decoration: none;
   color: var(--cor-terciaria);
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .rodape__conteudo__links__link:focus-visible {

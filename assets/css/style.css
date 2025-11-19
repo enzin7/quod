@@ -5,6 +5,7 @@
 @import url(search-bar.css);
 @import url(footer.css);
 @import url(about-footer.css);
+@import url(about.css);
 
 :root {
   --fonte-principal: "Poppins", sans-serif;
@@ -15,7 +16,6 @@
   --cor-terciaria: #000000;
   --cor-cinza: #666;
   --cor-cinza-sobre: #333;
-  --cor-social-hover: #272727;
 }
 
 * {

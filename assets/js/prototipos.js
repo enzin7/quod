@@ -1,3 +1,7 @@
+logoGitHub = document.getElementById("logo_github");
+logoLinkedin = document.getElementById("logo_linkedin");
+logoInstagram = document.getElementById("logo_instagram");
+
 aberto = false;
 
 function abrirSobre() {
@@ -48,4 +52,49 @@ document.getElementById("main").addEventListener("click", () => {
 
     aberto = false;
   }
+});
+
+logoGitHub.addEventListener("mouseenter", () => {
+  gitImage = document.getElementById("logo_github_imagem");
+  gitImage.src = "./assets/img/logo-github-hover.png";
+  gitImage.style.height = "2.25rem";
+  gitImage.style.paddingRight = "0.2rem";
+});
+
+logoGitHub.addEventListener("mouseleave", () => {
+  gitImage = document.getElementById("logo_github_imagem");
+  gitImage.src = "./assets/img/logo-github.png";
+  gitImage.style.height = "1.9rem";
+  gitImage.style.paddingRight = "0.3rem";
+});
+
+logoLinkedin.addEventListener("mouseenter", () => {
+  linkedinImage = document.getElementById("logo_linkedin_imagem");
+  linkedinImage.src = "./assets/img/logo-linkedin-hover.png";
+  linkedinImage.style.height = "3.1rem";
+  linkedinImage.style.margin = "-1rem";
+  linkedinImage.style.paddingRight = "0.8rem";
+});
+
+logoLinkedin.addEventListener("mouseleave", () => {
+  linkedinImage = document.getElementById("logo_linkedin_imagem");
+  linkedinImage.src = "./assets/img/logo-linkedin.png";
+  linkedinImage.style.height = "1.9rem";
+  linkedinImage.style.margin = "0";
+  linkedinImage.style.marginBottom = "0.4rem";
+  linkedinImage.style.paddingRight = "0.3rem";
+});
+
+logoInstagram.addEventListener("mouseenter", () => {
+  InstagramImage = document.getElementById("logo_instagram_imagem");
+  InstagramImage.src = "./assets/img/logo-instagram-hover.png";
+  InstagramImage.style.height = "2.2rem";
+  InstagramImage.style.marginRight = "-0.4rem";
+});
+
+logoInstagram.addEventListener("mouseleave", () => {
+  InstagramImage = document.getElementById("logo_instagram_imagem");
+  InstagramImage.src = "./assets/img/logo-instagram.png";
+  InstagramImage.style.height = "1.9rem";
+  InstagramImage.style.marginRight = "-0.2rem";
 });
