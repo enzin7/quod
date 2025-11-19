@@ -9,7 +9,7 @@
   background-color: var(--cor-principal);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-  height: 26rem;
+  height: 28rem;
   max-width: 60rem;
   padding-left: 1.2rem;
   display: flex;
@@ -39,8 +39,44 @@
   color: var(--cor-cinza-sobre);
 }
 
+.about__mensagem__links {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.about__mensagem__links__link {
+  background-color: var(--cor-terciaria);
+  border-radius: 15px;
+  padding: 0 0.2rem 0 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+}
+
+.about__mensagem__links__link:hover {
+  background-color: var(--cor-secundaria);
+}
+
+.logo-github,
+.logo-linkedin,
+.logo-instagram {
+  height: 2rem;
+}
+
+.logo-instagram {
+  padding-right: 4px;
+}
+
+.logo-linkedin {
+  margin-top: 8px;
+  margin-bottom: -30px;
+}
+
 .about__imagem {
-  height: 26rem;
+  height: 28rem;
   border-radius: 0 5px 5px 0;
 }
 
