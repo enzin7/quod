@@ -6,7 +6,7 @@
 }
 
 .conteudo-about__titulo__titulo {
-    font-size: 2rem;
+  font-size: 2rem;
 }
 
 .conteudo-about__titulo__subtitulo {
@@ -61,6 +61,8 @@
 }
 
 .logo-linkedin {
+  height: 1.9rem;
+  margin: 0;
   padding-right: 0.3rem;
   margin-bottom: 0.4rem;
 }
