@@ -49,6 +49,11 @@
   padding-left: 1rem;
 }
 
+.menu-hamburguer__ativo {
+  font-weight: 600;
+  color: var(--cor-secundaria);
+}
+
 .lista-menu__link {
   text-decoration: none;
   color: var(--cor-terciaria);
@@ -59,15 +64,15 @@
   color: var(--cor-secundaria);
 }
 
-.menu-hamburguer__ativo {
-  font-weight: 600;
-  color: var(--cor-secundaria);
-}
-
 .logo {
   height: 3.75rem;
   cursor: pointer;
   padding-right: 6rem;
+}
+
+.principal {
+  display: flex;
+  gap: 2.5rem;
 }
 
 .cabecalho__menu__links__link {
@@ -86,11 +91,6 @@
 .cabecalho__menu__links__link:focus-visible {
   outline: 2px solid var(--cor-secundaria);
   outline-offset: 1px;
-}
-
-.principal {
-  display: flex;
-  gap: 2.5rem;
 }
 
 .navegacao_ativa {
