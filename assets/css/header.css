@@ -51,7 +51,7 @@
 
 .menu-hamburguer__ativo {
   font-weight: 600;
-  color: var(--cor-secundaria);
+  color: var(--cor-secundaria) !important;
 }
 
 .lista-menu__link {
