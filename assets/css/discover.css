@@ -9,6 +9,7 @@
 
 .conteudo-descubra__galeria::-webkit-scrollbar {
   height: 0.3rem;
+  -webkit-overflow-scrolling: touch;
 }
 
 .conteudo-descubra__galeria__colunas {
@@ -33,6 +34,7 @@
 .conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar {
   width: 0.3rem;
   background-color: var(--cor-fundo-scroll);
+  -webkit-overflow-scrolling: touch;
 }
 
 .conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar-thumb,
