@@ -7,9 +7,18 @@
   margin-bottom: 1rem;
 }
 
+.conteudo-descubra__galeria::-webkit-scrollbar {
+  height: 0.3rem;
+}
+
 .conteudo-descubra__galeria__colunas {
   display: flex;
   flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.conteudo-descubra__galeria__colunas__titulo {
+  font-weight: 600;
 }
 
 .conteudo-descubra__galeria__colunas__scroll {
@@ -26,11 +35,13 @@
   background-color: var(--cor-fundo-scroll);
 }
 
-.conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar-thumb {
+.conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar-thumb,
+.conteudo-descubra__galeria::-webkit-scrollbar-thumb {
   background: var(--cor-terciaria);
 }
 
-.conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar-thumb:hover {
+.conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar-thumb:hover,
+.conteudo-descubra__galeria::-webkit-scrollbar-thumb:hover {
   background: var(--cor-secundaria);
   cursor: pointer;
 }
@@ -40,14 +51,66 @@
   outline-offset: 3px;
 }
 
-.conteudo-descubra__galeria__colunas__titulo {
-  font-weight: 600;
-}
-
 .conteudo-descubra__galeria__colunas__fotos {
   background-color: var(--cor-terciaria);
   height: 15rem;
   width: 17rem;
   border-radius: 5px;
   flex-shrink: 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .conteudo-descubra__galeria {
+    width: 160rem;
+    gap: 6rem;
+  }
+
+  .conteudo-descubra__galeria__colunas__titulo {
+    font-weight: 600;
+    font-size: 1.5rem;
+  }
+
+  .conteudo-descubra__galeria__colunas__scroll {
+    height: 87.5rem;
+  }
+
+  .conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar {
+    width: 0.4rem;
+  }
+
+  .conteudo-descubra__galeria__colunas__fotos {
+    height: 17rem;
+    width: 19rem;
+  }
+}
+
+@media screen and (max-width: 1440px) {
+  .conteudo-descubra__galeria {
+    gap: 2rem;
+  }
+
+  .conteudo-descubra__galeria__colunas__scroll {
+    height: 77.4rem;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .conteudo-descubra__galeria {
+    width: 60rem;
+    overflow-x: auto;
+    justify-content: left;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .conteudo-descubra__galeria {
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .conteudo-descubra__galeria {
+    width: 18.3rem;
+    margin: 1rem 0;
+  }
 }
