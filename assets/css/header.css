@@ -95,6 +95,7 @@
 
 .navegacao_ativa {
   border-color: var(--cor-secundaria);
+  padding: 0 0.3rem;
   cursor: pointer;
 }
 

@@ -1,0 +1,53 @@
+.conteudo-descubra__galeria {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 3rem;
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.conteudo-descubra__galeria__colunas {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo-descubra__galeria__colunas__scroll {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  height: 77.5rem;
+  padding-right: 1rem;
+  overflow-y: auto;
+}
+
+.conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar {
+  width: 0.3rem;
+  background-color: var(--cor-fundo-scroll);
+}
+
+.conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar-thumb {
+  background: var(--cor-terciaria);
+}
+
+.conteudo-descubra__galeria__colunas__scroll::-webkit-scrollbar-thumb:hover {
+  background: var(--cor-secundaria);
+  cursor: pointer;
+}
+
+.conteudo-descubra__galeria__colunas__scroll:focus-visible {
+  outline: 3px solid var(--cor-secundaria);
+  outline-offset: 3px;
+}
+
+.conteudo-descubra__galeria__colunas__titulo {
+  font-weight: 600;
+}
+
+.conteudo-descubra__galeria__colunas__fotos {
+  background-color: var(--cor-terciaria);
+  height: 15rem;
+  width: 17rem;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
