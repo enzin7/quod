@@ -44,9 +44,38 @@ function abrirMenuHamb() {
   }
 }
 
+function abrirCadastro() {
+  if (!aberto) {
+    document.getElementById("cadastro").style.display = "flex";
+    document.getElementById("login").style.display = "none";
+
+    aberto = true;
+  } else if (aberto) {
+    document.getElementById("cadastro").style.display = "none";
+
+    aberto = false;
+  }
+}
+
+function abrirLogin() {
+    if (!aberto) {
+    document.getElementById("login").style.display = "flex";
+    document.getElementById("cadastro").style.display = "none";
+
+    aberto = true;
+  } else if (aberto) {
+    document.getElementById("login").style.display = "none";
+
+    aberto = false;
+  }
+}
+
 document.getElementById("main").addEventListener("click", () => {
   if (aberto) {
     document.getElementById("sobre_rodape").style.display = "none";
+    document.getElementById("cadastro").style.display = "none";
+    document.getElementById("lista_menu").style.display = "none";
+    document.getElementById("login").style.display = "none";
     document.body.style.cursor = "auto";
     document.body.style.overflow = "visible";
 

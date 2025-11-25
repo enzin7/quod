@@ -50,7 +50,7 @@
 }
 
 .menu-hamburguer__ativo {
-  font-weight: 600;
+  font-weight: var(--fonte-weight);
   color: var(--cor-secundaria) !important;
 }
 
@@ -78,10 +78,11 @@
 .cabecalho__menu__links__link {
   color: var(--cor-terciaria);
   text-decoration: none;
-  font-weight: 600;
+  font-weight: var(--fonte-weight);
   font-size: 0.84rem;
   align-content: center;
   border-bottom: 3px solid transparent;
+  cursor: pointer;
 }
 
 .cabecalho__menu__links__link:hover {

@@ -7,6 +7,8 @@
 @import url(about-footer.css);
 @import url(about.css);
 @import url(discover.css);
+@import url(login.css);
+@import url(register.css);
 
 :root {
   --fonte-principal: "Poppins", sans-serif;
@@ -18,6 +20,7 @@
   --cor-cinza: #666;
   --cor-cinza-sobre: #333;
   --cor-fundo-scroll: #888;
+  --cor-borda-login-cadastro: #b5b5b5;
 }
 
 * {

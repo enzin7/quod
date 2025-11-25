@@ -18,7 +18,7 @@
 }
 
 .conteudo-descubra__galeria__colunas__titulo {
-  font-weight: 600;
+  font-weight: var(--fonte-weight);
   margin-bottom: 0.5rem;
 }
 
@@ -67,7 +67,7 @@
   }
 
   .conteudo-descubra__galeria__colunas__titulo {
-    font-weight: 600;
+    font-weight: var(--fonte-weight);
     font-size: 1.5rem;
   }
 

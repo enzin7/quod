@@ -10,7 +10,7 @@
 }
 
 .conteudo-about__titulo__subtitulo {
-  font-weight: 600;
+  font-weight: var(--fonte-weight);
   color: var(--cor-cinza-sobre);
   margin: -0.5rem 0 0.5rem 0;
 }

@@ -22,7 +22,7 @@
 
 .conteudo__pesquisa__barra::placeholder {
   color: var(--cor-primaria);
-  font-weight: 600;
+  font-weight: var(--fonte-weight);
 }
 
 .conteudo__pesquisa__lupa {
