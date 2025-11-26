@@ -215,13 +215,17 @@
   }
 }
 
-/* @media screen and (max-width: 30px) {
+@media screen and (max-width: 390px) {
   .botao-cadastro-login {
     width: 9.81rem;
   }
 
   .cadastro__caixa {
     width: 22rem;
+  }
+
+  .cadastro__caixa__png {
+    padding: 0;
   }
 
   .cadastro__caixa__conteudo {
@@ -243,15 +247,19 @@
   .cadastro__caixa__divicao {
     font-size: 0.86rem;
   }
-} */
+}
 
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 360px) {
   .botao-cadastro-login {
     width: 8.05rem;
   }
 
   .cadastro__caixa {
     width: 18.5rem;
+  }
+
+  .cadastro__caixa__png {
+    padding: 0.61rem 0.4rem;
   }
 
   .cadastro__caixa__conteudo {
