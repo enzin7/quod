@@ -215,7 +215,7 @@
   }
 }
 
-@media screen and (max-width: 390px) {
+/* @media screen and (max-width: 30px) {
   .botao-cadastro-login {
     width: 9.81rem;
   }
@@ -243,9 +243,9 @@
   .cadastro__caixa__divicao {
     font-size: 0.86rem;
   }
-}
+} */
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 390px) {
   .botao-cadastro-login {
     width: 8.05rem;
   }
