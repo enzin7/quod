@@ -215,7 +215,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .botao-cadastro-login {
     width: 9.81rem;
   }
@@ -241,7 +241,7 @@
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .botao-cadastro-login {
     width: 8.05rem;
   }
