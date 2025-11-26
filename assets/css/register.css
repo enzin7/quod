@@ -228,6 +228,10 @@
     width: 19rem;
   }
 
+  .cadastro__caixa__conteudo__input {
+    width: 15.7rem;
+  }
+
   .cadastro__caixa__check__p {
     font-size: 0.7rem;
   }
@@ -252,6 +256,10 @@
 
   .cadastro__caixa__conteudo {
     width: 17rem;
+  }
+
+  .cadastro__caixa__conteudo__input {
+    width: 13.7rem;
   }
 
   .cadastro-p {
