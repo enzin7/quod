@@ -239,7 +239,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 390px) {
   .botao-login-cadastro {
     width: 9.81rem;
   }
