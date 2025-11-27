@@ -1,5 +1,5 @@
 .cadastro {
-  display: none;
+  display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -213,6 +213,22 @@
   .cadastro__caixa {
     width: 24rem;
   }
+
+  .cadastro__caixa__conteudo {
+    width: 21rem;
+  }
+
+  .cadastro__caixa__check__p {
+    font-size: 0.8rem;
+  }
+
+  .cadastro-p {
+    font-size: 0.64rem;
+  }
+
+  .cadastro__caixa__divicao {
+    font-size: 0.9rem;
+  }
 }
 
 @media screen and (max-width: 390px) {
@@ -224,16 +240,12 @@
     width: 22rem;
   }
 
-  .cadastro__caixa__png {
-    padding: 0;
-  }
-
   .cadastro__caixa__conteudo {
     width: 19rem;
   }
 
-  .cadastro__caixa__conteudo__input {
-    width: 15.7rem;
+  .input-menor {
+    width: 14rem;
   }
 
   .cadastro__caixa__check__p {
@@ -249,7 +261,7 @@
   }
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 370px) {
   .botao-cadastro-login {
     width: 8.05rem;
   }
@@ -258,23 +270,19 @@
     width: 18.5rem;
   }
 
-  .cadastro__caixa__png {
-    padding: 0.61rem 0.4rem;
-  }
-
   .cadastro__caixa__conteudo {
-    width: 17rem;
+    width: 16rem;
   }
 
-  .cadastro__caixa__conteudo__input {
-    width: 13.7rem;
+  .input-menor {
+    width: 10.5rem;
   }
 
   .cadastro-p {
-    font-size: 0.51rem;
+    font-size: 0.48rem;
   }
 
   .cadastro__caixa__divicao {
-    font-size: 0.76rem;
+    font-size: 0.7rem;
   }
 }

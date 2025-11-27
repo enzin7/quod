@@ -56,7 +56,7 @@
   }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 385px) {
   .conteudo__pesquisa__barra {
     width: 19rem;
     font-size: 0.75rem;
