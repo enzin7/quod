@@ -250,6 +250,10 @@
     z-index: 10000;
   }
 
+  .input-menor {
+    padding: 0;
+  }
+
   .cadastro__caixa__check__p {
     font-size: 0.7rem;
   }
