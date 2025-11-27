@@ -73,7 +73,7 @@
 }
 
 .cadastro__caixa__conteudo__input {
-  background-color: #f2f2f2;
+  background-color: var(--cor-fundo-placeholder-cadastro-login);
   font-size: 0.9rem;
   padding: 0.7rem 0.4rem;
   border: none;
@@ -86,7 +86,7 @@
 .cadastro__caixa__conteudo__input::placeholder {
   font-weight: var(--fonte-weight);
   text-align: start;
-  font-size: 13px;
+  font-size: 0.82rem;
   opacity: 0.6;
 }
 
@@ -97,14 +97,21 @@
 }
 
 .cadastro__caixa__check {
+  margin: 0;
   display: flex;
-  margin-left: -13.2rem;
+  flex-direction: column;
+}
+
+.cadastro__caixa__check__div {
+  display: flex;
+  justify-content: start;
   gap: 3px;
 }
 
 .cadastro__caixa__check__input {
   cursor: pointer;
   accent-color: var(--cor-secundaria);
+  margin-left: -0.3rem;
 }
 
 .cadastro__caixa__check__input:focus-visible {
@@ -126,18 +133,13 @@
   text-align: center;
 }
 
-.social {
-  border: none;
-  gap: 1.5rem;
-}
-
 .cadastro__caixa__conteudo__alternativas {
   display: flex;
   gap: 4.1rem;
 }
 
 .cadastro__caixa__conteudo__alternativas__link {
-  font-size: 14px;
+  font-size: 0.9rem;
   font-weight: var(--fonte-weight);
   color: var(--cor-cinza);
 }
@@ -147,24 +149,6 @@
   color: var(--cor-secundaria);
   font-weight: var(--fonte-weight);
   cursor: pointer;
-}
-
-.cadastro__caixa__check {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-}
-
-.cadastro__caixa__check__div {
-  display: flex;
-  justify-content: start;
-  gap: 3px;
-}
-
-.cadastro__caixa__check__input {
-  cursor: pointer;
-  accent-color: var(--cor-secundaria);
-  margin-left: -0.3rem;
 }
 
 @media screen and (min-width: 2000px) {
@@ -196,10 +180,7 @@
     font-size: 1.186rem;
   }
 
-  .cadastro__caixa__conteudo__alternativas__link {
-    font-size: 1.2rem;
-  }
-
+  .cadastro__caixa__conteudo__alternativas__link,
   .cadastro__caixa__conteudo__alternativas__link__links {
     font-size: 1.2rem;
   }
@@ -207,7 +188,7 @@
 
 @media screen and (max-width: 530px) {
   .botao-cadastro-login {
-    width: 10.82rem;
+    width: 10.8rem;
   }
 
   .cadastro__caixa {

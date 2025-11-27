@@ -9,6 +9,7 @@
 @import url(discover.css);
 @import url(login.css);
 @import url(register.css);
+@import url(login-register.css);
 
 :root {
   --fonte-principal: "Poppins", sans-serif;
@@ -20,6 +21,7 @@
   --cor-cinza: #666;
   --cor-cinza-sobre: #333;
   --cor-fundo-scroll: #888;
+  --cor-fundo-placeholder-cadastro-login: #f2f2f2;
   --cor-borda-login-cadastro: #b5b5b5;
 }
 

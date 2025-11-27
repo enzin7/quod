@@ -1,0 +1,32 @@
+.social {
+  border: none;
+  gap: 1.5rem;
+}
+
+.social-botoes {
+  width: 100px;
+  height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.social-botoes:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.botao-google {
+  background-color: red;
+}
+
+.botao-facebook {
+  background-color: #3b5998;
+}
+
+.botao-twitter {
+  background-color: var(--cor-terciaria);
+}
