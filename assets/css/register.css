@@ -244,10 +244,6 @@
     width: 19rem;
   }
 
-  .cadastro__caixa__png {
-    background-color: var(--cor-primaria);
-  }
-
   .input-menor {
     width: 13.5rem;
   }
