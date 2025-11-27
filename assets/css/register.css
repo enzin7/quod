@@ -278,6 +278,10 @@
     width: 16rem;
   }
 
+  .cadastro__caixa__conteudo__input {
+    width: 12.8rem;
+  }
+
   .input-menor {
     width: 10.5rem;
   }
