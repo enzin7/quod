@@ -245,8 +245,9 @@
     width: 19rem;
   }
 
-  .input-menor {
-    margin: -0.7rem;
+  .cadastro__caixa__png {
+    background-color: var(--cor-primaria);
+    z-index: 10000;
   }
 
   .cadastro__caixa__check__p {
@@ -273,10 +274,6 @@
 
   .cadastro__caixa__conteudo {
     width: 16rem;
-  }
-
-  .input-menor {
-    padding: none;
   }
 
   .cadastro-p {
