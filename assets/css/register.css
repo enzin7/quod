@@ -241,7 +241,7 @@
   }
 
   .cadastro__caixa__conteudo {
-    width: 19rem;
+    width: 18rem;
   }
 
   .cadastro__caixa__png {
@@ -262,7 +262,7 @@
   }
 
   .cadastro__caixa__divicao {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 }
 
@@ -277,6 +277,10 @@
 
   .cadastro__caixa__conteudo {
     width: 16rem;
+  }
+
+  .input-menor {
+    width: 10.5rem;
   }
 
   .cadastro-p {
