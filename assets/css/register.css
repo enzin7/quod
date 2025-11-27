@@ -245,8 +245,8 @@
     width: 19rem;
   }
 
-  .input-menor {
-    padding: none;
+  .input-menor::placeholder {
+    padding-left: 0rem;
   }
 
   .cadastro__caixa__check__p {
@@ -273,6 +273,10 @@
 
   .cadastro__caixa__conteudo {
     width: 16rem;
+  }
+
+  .input-menor {
+    padding: none;
   }
 
   .cadastro-p {
