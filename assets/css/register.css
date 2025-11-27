@@ -279,7 +279,11 @@
   }
 
   .input-menor {
-    width: 10.5rem;
+    padding: 0.7rem 0;
+  }
+
+  .input-menor::placeholder {
+    padding-left: 0.4rem;
   }
 
   .cadastro-p {
