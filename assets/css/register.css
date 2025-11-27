@@ -245,7 +245,7 @@
     width: 19rem;
   }
 
-  .input-menor::placeholder {
+  .input-menor {
     padding-left: 0rem;
   }
 
