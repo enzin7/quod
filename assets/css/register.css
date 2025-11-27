@@ -241,12 +241,11 @@
   }
 
   .cadastro__caixa__conteudo {
-    width: 15rem;
+    width: 19rem;
   }
 
   .cadastro__caixa__png {
     background-color: var(--cor-primaria);
-    z-index: 10000;
   }
 
   .input-menor {
@@ -276,11 +275,11 @@
   }
 
   .cadastro__caixa__conteudo {
-    width: 15rem;
+    width: 16rem;
   }
 
   .input-menor {
-    width: 9.5rem;
+    width: 10.5rem;
   }
 
   .cadastro-p {
