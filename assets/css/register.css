@@ -250,16 +250,6 @@
     z-index: 10000;
   }
 
-  /* .cadeado {
-    border-left: 1px solid var(--cor-borda-login-cadastro);
-    margin-right: -1px;
-  }
-
-  .olho-fechado {
-    border-right: 1px solid var(--cor-borda-login-cadastro);
-    margin-left: -9px;
-  } */
-
   .cadastro__caixa__check__p {
     font-size: 0.7rem;
   }
@@ -284,6 +274,16 @@
 
   .cadastro__caixa__conteudo {
     width: 16rem;
+  }
+
+  .cadeado {
+    border-left: 1px solid var(--cor-borda-login-cadastro);
+    margin-right: -1px;
+  }
+
+  .olho-fechado {
+    border-right: 1px solid var(--cor-borda-login-cadastro);
+    margin-left: -9px;
   }
 
   .cadastro-p {
