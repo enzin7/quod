@@ -146,7 +146,7 @@
 
 @media screen and (max-width: 425px) {
   .about__mensagem {
-    height: 33rem;
+    height: 34rem;
     width: 20rem;
   }
 
@@ -157,7 +157,7 @@
 
 @media screen and (max-width: 370px) {
   .about__mensagem {
-    width: 15rem;
+    width: 16rem;
   }
 
   .about__mensagem__conteudo {
