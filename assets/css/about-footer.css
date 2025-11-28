@@ -2,7 +2,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .about__mensagem {
@@ -79,26 +82,13 @@
   border-radius: 0 5px 5px 0;
 }
 
-.sobre-rodape {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 56.2rem;
-  height: 32rem;
-  border: none;
-  display: none;
-  background: none;
+@media screen and (min-width: 2000px) {
+  .about__mensagem__conteudo {
+    font-size: 1.1rem;
+  }
 }
 
-.sobre-rodape iframe {
-  width: 100%;
-  height: 100%;
-  border: none;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-}
-
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1440px) {
   .about__mensagem {
     height: 32rem;
     width: 55rem;
@@ -107,16 +97,12 @@
   .about__imagem {
     height: 32rem;
   }
-
-  .sobre-rodape {
-    height: 32rem;
-    width: 55rem;
-  }
 }
 
-@media screen and (max-width: 870px) {
+@media screen and (max-width: 920px) {
   .about__mensagem {
-    height: 25rem;
+    height: 26rem;
+    width: 40rem;
   }
 
   .about__mensagem__conteudo {
@@ -126,45 +112,39 @@
   .about__imagem {
     display: none;
   }
+}
 
-  .sobre-rodape {
-    height: 25rem;
-    width: 45rem;
+@media screen and (max-width: 700px) {
+  .about__mensagem {
+    height: 30rem;
+    width: 30rem;
   }
 }
 
 @media screen and (max-width: 550px) {
   .about__mensagem {
-    height: 30rem;
+    height: 29rem;
+    width: 23rem;
   }
 
   .about__mensagem__conteudo {
     font-size: 0.9rem;
   }
-
-  .sobre-rodape {
-    height: 30rem;
-    width: 24rem;
-  }
 }
 
-@media screen and (max-width: 390px) {
-  .sobre-rodape {
+@media screen and (max-width: 425px) {
+  .about__mensagem {
+    height: 33rem;
     width: 20rem;
   }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 370px) {
   .about__mensagem {
-    height: 30rem;
+    width: 15rem;
   }
 
   .about__mensagem__conteudo {
     font-size: 0.8rem;
-  }
-
-  .sobre-rodape {
-    height: 30rem;
-    width: 18rem;
   }
 }

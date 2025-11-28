@@ -6,10 +6,12 @@ aberto = false;
 
 function abrirSobre() {
   if (!aberto) {
-    document.getElementById("sobre_rodape").style.display = "block";
+    document.getElementById("about").style.display = "block";
     document.getElementById("lista_menu").style.display = "none";
     document.body.style.cursor = "pointer";
     document.body.style.overflow = "hidden";
+
+    document.getElementById("blur").classList.add("active");
 
     setTimeout(() => {
       aberto = true;
@@ -22,6 +24,7 @@ function fecharSobre() {
     document.getElementById("sobre_rodape").style.display = "none";
     document.body.style.cursor = "auto";
     document.body.style.overflow = "visible";
+    document.getElementById("blur").classList.remove("active");
 
     aberto = false;
   }
@@ -49,6 +52,8 @@ function abrirCadastro() {
     document.getElementById("cadastro").style.display = "flex";
     document.getElementById("login").style.display = "none";
 
+    document.getElementById("blur").classList.add("active");
+
     aberto = true;
   } else if (aberto) {
     document.getElementById("cadastro").style.display = "none";
@@ -58,9 +63,10 @@ function abrirCadastro() {
 }
 
 function abrirLogin() {
-    if (!aberto) {
+  if (!aberto) {
     document.getElementById("login").style.display = "flex";
     document.getElementById("cadastro").style.display = "none";
+    document.getElementById("blur").classList.add("active");
 
     aberto = true;
   } else if (aberto) {
@@ -126,4 +132,8 @@ logoInstagram.addEventListener("mouseleave", () => {
   InstagramImage.src = "./assets/img/logo-instagram.png";
   InstagramImage.style.height = "1.9rem";
   InstagramImage.style.marginRight = "-0.2rem";
+});
+
+document.getElementById("blur").addEventListener("click", () => {
+  document.getElementById("blur").classList.toggle("active");
 });
