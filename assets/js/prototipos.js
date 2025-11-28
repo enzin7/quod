@@ -6,7 +6,7 @@ aberto = false;
 
 function abrirSobre() {
   if (!aberto) {
-    document.getElementById("about").style.display = "block";
+    document.getElementById("about").style.display = "flex";
     document.getElementById("lista_menu").style.display = "none";
     document.body.style.cursor = "pointer";
     document.body.style.overflow = "hidden";
@@ -132,8 +132,4 @@ logoInstagram.addEventListener("mouseleave", () => {
   InstagramImage.src = "./assets/img/logo-instagram.png";
   InstagramImage.style.height = "1.9rem";
   InstagramImage.style.marginRight = "-0.2rem";
-});
-
-document.getElementById("blur").addEventListener("click", () => {
-  document.getElementById("blur").classList.toggle("active");
 });
