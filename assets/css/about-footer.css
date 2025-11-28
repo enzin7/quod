@@ -6,10 +6,10 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
+  background-color: var(--cor-primaria);
 }
 
 .about__mensagem {
-  background-color: var(--cor-principal);
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
   border-radius: 5px;
   height: 28rem;
@@ -112,12 +112,20 @@
   .about__imagem {
     display: none;
   }
+
+  .about__mensagem__links {
+    padding-left: 14.5rem;
+  }
 }
 
 @media screen and (max-width: 700px) {
   .about__mensagem {
     height: 30rem;
     width: 30rem;
+  }
+
+  .about__mensagem__links {
+    padding-left: 9.7rem;
   }
 }
 
@@ -130,12 +138,20 @@
   .about__mensagem__conteudo {
     font-size: 0.9rem;
   }
+
+  .about__mensagem__links {
+    padding-left: 5.2rem;
+  }
 }
 
 @media screen and (max-width: 425px) {
   .about__mensagem {
     height: 33rem;
     width: 20rem;
+  }
+
+  .about__mensagem__links {
+    padding-left: 4.2rem;
   }
 }
 
@@ -146,5 +162,9 @@
 
   .about__mensagem__conteudo {
     font-size: 0.8rem;
+  }
+
+  .about__mensagem__links {
+    padding-left: 2.2rem;
   }
 }
