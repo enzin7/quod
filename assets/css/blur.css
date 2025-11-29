@@ -7,6 +7,11 @@
   transition: backdrop-filter 300ms ease, background 300ms ease;
 }
 
+.blur.menu {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
 .blur.active {
   pointer-events: auto;
   cursor: pointer;

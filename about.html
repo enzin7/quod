@@ -7,88 +7,91 @@
     <title>sobre | QUOD</title>
   </head>
   <body>
+    <!-- Cabeçalho -->
     <header class="cabecalho">
       <nav class="cabecalho__menu">
         <div class="cabecalho__menu__links">
           <button class="menu-hamburguer-botao" onclick="abrirMenuHamb()">
             <span class="menu-hamburguer"></span>
           </button>
-          <ul class="lista-menu" id="lista_menu">
+          <ul id="lista_menu" class="lista-menu">
             <li class="lista-menu__item">
-              <a href="index.html" class="lista-menu__link">home</a>
+              <a class="lista-menu__link" href="index.html"> home </a>
             </li>
             <li class="lista-menu__item">
-              <a href="discover.html" class="lista-menu__link">descubra</a>
+              <a class="lista-menu__link" href="discover.html">descubra</a>
             </li>
             <li class="lista-menu__item">
-              <a href="construction.html" class="lista-menu__link">loja</a>
+              <a class="lista-menu__link" href="construction.html">loja</a>
             </li>
             <li class="lista-menu__item">
-              <a href="construction.html" class="lista-menu__link">blog</a>
+              <a class="lista-menu__link" href="construction.html">blog</a>
             </li>
             <li class="lista-menu__item">
-              <a href="construction.html" class="lista-menu__link">destaques</a>
+              <a class="lista-menu__link" href="construction.html">destaques</a>
             </li>
             <li class="lista-menu__item">
-              <a class="lista-menu__link menu-hamburguer__ativo">sobre</a>
+              <a class="lista-menu__link navegacao_ativa" href="about.html"
+                >sobre</a
+              >
             </li>
           </ul>
-          <img src="./assets/img/quod-logo1.png" alt="Logo QUOD" class="logo" />
+          <img class="logo" src="./assets/img/quod-logo1.png" alt="Logo QUOD" />
           <div class="principal">
             <a
+              class="cabecalho__menu__links__link"
               href="index.html"
               title="clique para ir a 'home'"
-              class="cabecalho__menu__links__link"
               >home</a
             >
             <a
+              class="cabecalho__menu__links__link"
               href="discover.html"
               title="clique para ir a 'descubra'"
-              class="cabecalho__menu__links__link"
               >descubra</a
             >
             <a
+              class="cabecalho__menu__links__link"
               href="construction.html"
               title="clique para ir a 'loja'"
-              class="cabecalho__menu__links__link"
               >loja</a
             >
             <a
+              class="cabecalho__menu__links__link"
               href="construction.html"
               title="clique para ir ao 'blog'"
-              class="cabecalho__menu__links__link"
               >blog</a
             >
             <a
+              class="cabecalho__menu__links__link"
               href="construction.html"
               title="clique para ir ao 'destaques'"
-              class="cabecalho__menu__links__link"
               >destaques</a
             >
             <a
-              href="about.html"
-              title="Você está no 'sobre'"
               class="cabecalho__menu__links__link navegacao_ativa"
+              title="Você está no 'sobre'"
               >sobre</a
             >
           </div>
         </div>
         <div class="cabecalho__menu__links">
           <a
-            onclick="abrirCadastro()"
             class="cabecalho__menu__links__link secundario"
+            onclick="abrirCadastro()"
             >Cadastre-se</a
           >
           <a
-            onclick="abrirLogin()"
             class="cabecalho__menu__links__link botao_login"
+            onclick="abrirLogin()"
             >Login</a
           >
         </div>
       </nav>
     </header>
+    <!-- Fim do Cabeçalho -->
 
-    <main class="conteudo-about" id="main">
+    <main class="conteudo-about">
       <div>
         <section class="conteudo-about__titulo">
           <h1 class="conteudo-about__titulo__titulo">Sobre nós</h1>
@@ -132,44 +135,44 @@
             <h3 class="conteudo-about__redes__titulo">Acesse nossas redes:</h3>
             <div class="conteudo-about__redes__link">
               <a
-                href="https://github.com/enzin7/quod"
-                class="conteudo-about__redes__link__links"
-                target="blank"
                 id="logo_github"
+                class="conteudo-about__redes__link__links"
+                href="https://github.com/enzin7/quod"
+                target="blank"
               >
                 <img
+                  id="logo_github_imagem"
+                  class="conteudo-about__redes__link__links__imagem"
                   src="./assets/img/logo-github.png"
                   alt="Logo GitHub"
-                  class="conteudo-about__redes__link__links__imagem"
-                  id="logo_github_imagem"
                 />
                 GitHub
               </a>
               <a
-                href="https://www.linkedin.com/in/enzo-mota-torquette-84a597340/"
-                class="conteudo-about__redes__link__links"
-                target="blank"
                 id="logo_linkedin"
+                class="conteudo-about__redes__link__links"
+                href="https://www.linkedin.com/in/enzo-mota-torquette-84a597340/"
+                target="blank"
               >
                 <img
+                  id="logo_linkedin_imagem"
+                  class="conteudo-about__redes__link__links__imagem logo-linkedin-about"
                   src="./assets/img/logo-linkedin.png"
                   alt="Logo Linkedin"
-                  class="conteudo-about__redes__link__links__imagem logo-linkedin-about"
-                  id="logo_linkedin_imagem"
                 />
                 LinkedIn
               </a>
               <a
-                href="https://www.instagram.com/eoenzin_"
-                class="conteudo-about__redes__link__links"
-                target="blank"
                 id="logo_instagram"
+                class="conteudo-about__redes__link__links"
+                href="https://www.instagram.com/eoenzin_"
+                target="blank"
               >
                 <img
+                  id="logo_instagram_imagem"
+                  class="conteudo-about__redes__link__links__imagem logo-instagram"
                   src="./assets/img/logo-instagram.png"
                   alt="Logo Instagram"
-                  class="conteudo-about__redes__link__links__imagem logo-instagram"
-                  id="logo_instagram_imagem"
                 />
                 Instagram
               </a>
@@ -179,20 +182,21 @@
       </div>
       <section>
         <img
+          class="conteudo-about__imagem"
           src="./assets/img/sobrenos.png"
           alt="Imagem exemplo sobre"
-          class="conteudo-about__imagem"
         />
       </section>
     </main>
 
+    <!-- Rodapé -->
     <footer class="rodape">
       <div class="rodape__conteudo">
         <div class="rodape__conteudo__links logo_rodape">
           <img
+            class="rodape__conteudo__links__imagem"
             src="assets/img/quod-logo1.png"
             alt="Logo Quod"
-            class="rodape__conteudo__links__imagem"
           />
           <p class="rodape__conteudo__links__slogan">
             Imagens que contam histórias
@@ -202,10 +206,10 @@
           <h3>Navegação</h3>
           <ul>
             <li class="rodape__conteudo__links__lista">
-              <a href="#" class="rodape__conteudo__links__link">Início</a>
+              <a class="rodape__conteudo__links__link" href="#">Início</a>
             </li>
             <li class="rodape__conteudo__links__lista">
-              <a href="#" class="rodape__conteudo__links__link">Galeria</a>
+              <a class="rodape__conteudo__links__link" href="#">Galeria</a>
             </li>
             <li class="rodape__conteudo__links__lista">
               <a class="rodape__conteudo__links__link">Sobre nós</a>
@@ -219,17 +223,17 @@
             <li class="rodape__conteudo__links__lista">
               E-mail:
               <a
-                href="mailto:enzomota7@gmail.com"
                 class="rodape__conteudo__links__link contato"
+                href="mailto:enzomota7@gmail.com"
                 >contato@quod.com</a
               >
             </li>
             <li class="rodape__conteudo__links__lista">
               Telefone:
               <a
-                href="https://wa.me/5534998970545?text=Olá%20tudo%20bem?"
-                target="blank"
                 class="rodape__conteudo__links__link contato"
+                target="blank"
+                href="https://wa.me/5534998970545?text=Olá%20tudo%20bem?"
                 >(34) 99897-0545</a
               >
             </li>
@@ -238,81 +242,24 @@
         <p class="rodape__conteudo__links__marca copyII">&copy; 2025 QUOD</p>
       </div>
     </footer>
+    <!-- Fim do Rodapé -->
 
-    <!-- Caixa Sobre nós Rodapé -->
-    <div id="about" class="about">
-      <div class="about__mensagem">
-        <div class="about__mensagem__conteudo">
-          <div class="about__mensagem__titulo">
-            <h1>Sobre nós</h1>
-            <h4 class="about__mensagem__titulo__subtitulo">Equipe QUOD</h4>
-          </div>
-          <p class="about__mensagem__texto">
-            Em poucas palavras podemos definir o QUOD como uma plataforma
-            digital destinada ao fotojornalismo mas o quod vai além de ser uma
-            ponte entre fotojornalistas e veículos de comunicação.
-            <br />
-            Nós voltamos nossos olhos para o profissional que diariamente dá o
-            seu melhor, e muitas vezes se arrisca para poder registrar um
-            momento importante, que garante uma matéria rica em detalhes com
-            imagens para comprovar a notícia.
-            <br />
-            Valorizamos a verdade e por isso trazemos a Análise Forense para
-            garantir aos clientes a veracidade das imagens e proporcionar a
-            segurança necessária na aquisição das fotos.
-            <br />
-          </p>
-          <div class="about__mensagem__links">
-            <a
-              href="https://github.com/enzin7/quod"
-              target="_blank"
-              class="about__mensagem__links__link"
-              ><img
-                src="./assets/img/logo-github-hover.png"
-                alt="Logo GitHub"
-                class="logo-github"
-            /></a>
-            <a
-              href="https://www.linkedin.com/in/enzo-mota-torquette-84a597340/"
-              target="_blank"
-              class="about__mensagem__links__link"
-              ><img
-                src="./assets/img/logo-linkedin-hover.png"
-                alt="Logo Linkedin"
-                class="logo-linkedin"
-            /></a>
-            <a
-              href="https://www.instagram.com/eoenzin_"
-              target="_blank"
-              class="about__mensagem__links__link"
-              ><img
-                src="./assets/img/logo-instagram-hover.png"
-                alt="Logo Instagram"
-                class="logo-instagram"
-            /></a>
-          </div>
-        </div>
-        <img
-          src="./assets/img/sobrenos.png"
-          alt="Sobre nós png"
-          class="about__imagem"
-        />
-      </div>
-    </div>
-    <!-- Fim caixa Sobre nós Rodapé -->
+    <!-- Embaçamento da Tela -->
+    <div id="blur" class="blur"></div>
+    <!-- Embaçamento da Tela -->
 
     <!-- Caixa de Cadastro -->
-    <div class="cadastro" id="cadastro">
+    <div id="cadastro" class="cadastro">
       <img
+        class="cadastro__logo"
         src="assets/img/quod-logo.png"
         alt="Logo QUOD"
-        class="cadastro__logo"
       />
       <div class="botao">
         <a class="botao-cadastro-login botao-ativo-cadastro">Cadastre-se</a>
         <a
-          onclick="abrirLogin()"
           class="botao-cadastro-login botao-desativado-cadastro"
+          onclick="abrirLogin()"
         >
           Login
         </a>
@@ -321,59 +268,62 @@
         <p class="cadastro__caixa__divicao">por email</p>
         <div class="cadastro__caixa__conteudo">
           <img
+            class="cadastro__caixa__png"
             src="./assets/img/usuario.png"
             alt="Usuário PNG"
-            class="cadastro__caixa__png"
           />
           <input
-            type="email"
-            placeholder="Nome de usuário"
             class="cadastro__caixa__conteudo__input"
+            type="text"
+            placeholder="Nome de usuário"
           />
         </div>
         <div class="cadastro__caixa__conteudo">
           <img
+            class="cadastro__caixa__png"
             src="./assets/img/email.png"
             alt="Email PNG"
-            class="cadastro__caixa__png"
           />
           <input
+            class="cadastro__caixa__conteudo__input"
             type="email"
             placeholder="E-mail"
-            class="cadastro__caixa__conteudo__input"
           />
         </div>
         <div class="cadastro__caixa__conteudo caixa-menor">
           <img
+            class="cadastro__caixa__png cadeado"
             src="./assets/img/cadeado.png"
             alt="Cadeado PNG"
-            class="cadastro__caixa__png cadeado"
           />
           <input
+            id="input_senha_cadastro"
+            class="cadastro__caixa__conteudo__input input-menor"
             type="password"
             placeholder="Senha"
-            class="cadastro__caixa__conteudo__input input-menor"
           />
           <img
+            class="cadastro__caixa__png olho-fechado"
+            id="olho_senha_cadastro"
             src="./assets/img/olho-fechado.png"
             alt="Olho Senha"
-            class="cadastro__caixa__png olho-fechado"
+            onclick="mostrarSenhaCadastro()"
           />
         </div>
         <div class="cadastro__caixa__check">
           <div class="cadastro__caixa__check__div">
-            <input type="checkbox" class="cadastro__caixa__check__input" />
+            <input class="cadastro__caixa__check__input" type="checkbox" />
             <p class="cadastro__caixa__check__p">
               Eu li e concordo com os
               <a
-                href="#"
                 class="cadastro__caixa__conteudo__alternativas__link__links"
+                href="#"
                 >termos de uso</a
               >
             </p>
           </div>
           <div class="cadastro__caixa__check__div">
-            <input type="checkbox" class="cadastro__caixa__check__input" />
+            <input class="cadastro__caixa__check__input" type="checkbox" />
             <p class="cadastro__caixa__check__p cadastro-p">
               Eu não quero receber novidades e promoções da por e-mail.
             </p>
@@ -431,8 +381,8 @@
           <p class="cadastro__caixa__conteudo__alternativas__link">
             Já tem conta?
             <a
-              onclick="abrirLogin()"
               class="cadastro__caixa__conteudo__alternativas__link__links"
+              onclick="abrirLogin()"
               >Login</a
             >
           </p>
@@ -443,11 +393,11 @@
 
     <!-- Caixa de Login -->
     <div class="login" id="login">
-      <img src="assets/img/quod-logo.png" alt="Logo QUOD" class="login__logo" />
+      <img class="login__logo" src="assets/img/quod-logo.png" alt="Logo QUOD" />
       <div class="botao">
         <a
-          onclick="abrirCadastro()"
           class="botao-login-cadastro botao-desativado-login"
+          onclick="abrirCadastro()"
           >Cadastre-se</a
         >
         <a class="botao-login-cadastro botao-ativo-login">Login</a>
@@ -455,31 +405,34 @@
       <div class="login__caixa">
         <div class="login__caixa__conteudo">
           <img
+            class="login__caixa__png"
             src="./assets/img/email.png"
             alt="Email PNG"
-            class="login__caixa__png"
           />
           <input
+            class="login__caixa__conteudo__input"
             type="email"
             placeholder="E-mail"
-            class="login__caixa__conteudo__input"
           />
         </div>
         <div class="login__caixa__conteudo">
           <img
+            class="login__caixa__png"
             src="./assets/img/cadeado.png"
             alt="Cadeado PNG"
-            class="login__caixa__png"
           />
           <input
+            id="input_senha_login"
+            class="login__caixa__conteudo__input input-menor"
             type="password"
             placeholder="Senha"
-            class="login__caixa__conteudo__input input-menor"
           />
           <img
+            id="olho_senha_login"
+            class="login__caixa__png olho-fechado"
             src="./assets/img/olho-fechado.png"
             alt="Olho Senha"
-            class="login__caixa__png olho-fechado"
+            onclick="mostrarSenhaLogin()"
           />
         </div>
         <div class="login__caixa__check">
@@ -537,15 +490,15 @@
         <div class="login__caixa__conteudo__alternativas">
           <p class="login__caixa__conteudo__alternativas__link">
             Esqueci meu
-            <a href="" class="login__caixa__conteudo__alternativas__link__links"
+            <a class="login__caixa__conteudo__alternativas__link__links" href=""
               >e-mail</a
             >
           </p>
           <p class="login__caixa__conteudo__alternativas__link">
             Esqueci minha
             <a
-              href=""
               class="login__caixa__conteudo__alternativas__link__links link-direita"
+              href=""
               >senha</a
             >
           </p>

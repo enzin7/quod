@@ -1,6 +1,10 @@
 logoGitHub = document.getElementById("logo_github");
 logoLinkedin = document.getElementById("logo_linkedin");
 logoInstagram = document.getElementById("logo_instagram");
+olhoSenhaC = document.getElementById("olho_senha_cadastro");
+inputSenhaC = document.getElementById("input_senha_cadastro");
+olhoSenhaL = document.getElementById("olho_senha_login");
+inputSenhaL = document.getElementById("input_senha_login");
 
 aberto = false;
 
@@ -8,6 +12,8 @@ function abrirSobre() {
   if (!aberto) {
     document.getElementById("about").style.display = "flex";
     document.getElementById("lista_menu").style.display = "none";
+    document.getElementById("cadastro").style.display = "none";
+    document.getElementById("login").style.display = "none";
     document.body.style.cursor = "pointer";
     document.body.style.overflow = "hidden";
 
@@ -19,27 +25,16 @@ function abrirSobre() {
   }
 }
 
-function fecharSobre() {
-  if (aberto) {
-    document.getElementById("sobre_rodape").style.display = "none";
-    document.body.style.cursor = "auto";
-    document.body.style.overflow = "visible";
-    document.getElementById("blur").classList.remove("active");
-
-    aberto = false;
-  }
-}
-
 function abrirMenuHamb() {
   if (!aberto) {
     document.getElementById("lista_menu").style.display = "block";
-    document.getElementById("sobre_rodape").style.display = "none";
-    document.body.style.cursor = "pointer";
-    document.body.style.overflow = "hidden";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("cadastro").style.display = "none";
+    document.getElementById("login").style.display = "none";
 
-    setTimeout(() => {
-      aberto = true;
-    }, 300);
+    document.getElementById("blur").classList.add("menu");
+
+    aberto = true;
   } else if (aberto) {
     document.getElementById("lista_menu").style.display = "none";
 
@@ -51,6 +46,8 @@ function abrirCadastro() {
   if (!aberto) {
     document.getElementById("cadastro").style.display = "flex";
     document.getElementById("login").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("lista_menu").style.display = "none";
 
     document.getElementById("blur").classList.add("active");
 
@@ -66,6 +63,9 @@ function abrirLogin() {
   if (!aberto) {
     document.getElementById("login").style.display = "flex";
     document.getElementById("cadastro").style.display = "none";
+    document.getElementById("about").style.display = "none";
+    document.getElementById("lista_menu").style.display = "none";
+
     document.getElementById("blur").classList.add("active");
 
     aberto = true;
@@ -76,14 +76,15 @@ function abrirLogin() {
   }
 }
 
-document.getElementById("main").addEventListener("click", () => {
+document.getElementById("blur").addEventListener("click", () => {
   if (aberto) {
-    document.getElementById("sobre_rodape").style.display = "none";
+    document.getElementById("about").style.display = "none";
     document.getElementById("cadastro").style.display = "none";
-    document.getElementById("lista_menu").style.display = "none";
     document.getElementById("login").style.display = "none";
-    document.body.style.cursor = "auto";
-    document.body.style.overflow = "visible";
+    document.getElementById("lista_menu").style.display = "none";
+
+    document.getElementById("blur").classList.remove("active");
+    document.getElementById("blur").classList.remove("menu");
 
     aberto = false;
   }
@@ -132,4 +133,28 @@ logoInstagram.addEventListener("mouseleave", () => {
   InstagramImage.src = "./assets/img/logo-instagram.png";
   InstagramImage.style.height = "1.9rem";
   InstagramImage.style.marginRight = "-0.2rem";
+});
+
+function mostrarSenhaCadastro() {
+  if (inputSenhaC.type == "password") {
+    olhoSenhaC.src = "./assets/img/olho-aberto.png";
+    inputSenhaC.type = "text";
+  } else if (inputSenhaC.type == "text") {
+    olhoSenhaC.src = "./assets/img/olho-fechado.png";
+    inputSenhaC.type = "password";
+  }
+}
+
+function mostrarSenhaLogin() {
+  if (inputSenhaL.type == "password") {
+    olhoSenhaL.src = "./assets/img/olho-aberto.png";
+    inputSenhaL.type = "text";
+  } else if (inputSenhaL.type == "text") {
+    olhoSenhaL.src = "./assets/img/olho-fechado.png";
+    inputSenhaL.type = "password";
+  }
+}
+
+document.getElementById("main").addEventListener("click", () => {
+  document.getElementById("lista_menu").style.display = "none";
 });
