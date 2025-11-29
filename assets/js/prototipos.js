@@ -5,18 +5,20 @@ olhoSenhaC = document.getElementById("olho_senha_cadastro");
 inputSenhaC = document.getElementById("input_senha_cadastro");
 olhoSenhaL = document.getElementById("olho_senha_login");
 inputSenhaL = document.getElementById("input_senha_login");
+const main = document.getElementById("main");
 
 aberto = false;
 
 function abrirSobre() {
   if (!aberto) {
+    irAoMeio();
+
     document.getElementById("about").style.display = "flex";
     document.getElementById("lista_menu").style.display = "none";
     document.getElementById("cadastro").style.display = "none";
     document.getElementById("login").style.display = "none";
-    document.body.style.cursor = "pointer";
-    document.body.style.overflow = "hidden";
 
+    document.body.style.overflow = "hidden";
     document.getElementById("blur").classList.add("active");
 
     setTimeout(() => {
@@ -44,11 +46,14 @@ function abrirMenuHamb() {
 
 function abrirCadastro() {
   if (!aberto) {
+    irAoMeio();
+
     document.getElementById("cadastro").style.display = "flex";
     document.getElementById("login").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("lista_menu").style.display = "none";
 
+    document.body.style.overflow = "hidden";
     document.getElementById("blur").classList.add("active");
 
     aberto = true;
@@ -61,11 +66,14 @@ function abrirCadastro() {
 
 function abrirLogin() {
   if (!aberto) {
+    irAoMeio();
+
     document.getElementById("login").style.display = "flex";
     document.getElementById("cadastro").style.display = "none";
     document.getElementById("about").style.display = "none";
     document.getElementById("lista_menu").style.display = "none";
 
+    document.body.style.overflow = "hidden";
     document.getElementById("blur").classList.add("active");
 
     aberto = true;
@@ -76,6 +84,17 @@ function abrirLogin() {
   }
 }
 
+function irAoMeio() {
+  const meio = main.offsetTop + main.offsetHeight / 2 - window.innerHeight / 2;
+  window.scrollTo({ top: meio, behavior: "smooth" });
+}
+
+function galeriaDescubra() {
+  const descubraGaleria = document.getElementById("galeria_descubra");
+  const comeco = descubraGaleria.offsetTop - 15;
+  window.scrollTo({ top: comeco, behavior: "smooth" });
+}
+
 document.getElementById("blur").addEventListener("click", () => {
   if (aberto) {
     document.getElementById("about").style.display = "none";
@@ -83,6 +102,7 @@ document.getElementById("blur").addEventListener("click", () => {
     document.getElementById("login").style.display = "none";
     document.getElementById("lista_menu").style.display = "none";
 
+    document.body.style.overflow = "auto";
     document.getElementById("blur").classList.remove("active");
     document.getElementById("blur").classList.remove("menu");
 
@@ -155,6 +175,6 @@ function mostrarSenhaLogin() {
   }
 }
 
-document.getElementById("main").addEventListener("click", () => {
-  document.getElementById("lista_menu").style.display = "none";
-});
+function inicio() {
+  window.scrollTo({ top: 0, behavior: "smooth" });
+}

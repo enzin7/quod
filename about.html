@@ -91,7 +91,7 @@
     </header>
     <!-- Fim do Cabeçalho -->
 
-    <main class="conteudo-about">
+    <main id="main" class="conteudo-about">
       <div>
         <section class="conteudo-about__titulo">
           <h1 class="conteudo-about__titulo__titulo">Sobre nós</h1>
@@ -190,7 +190,7 @@
     </main>
 
     <!-- Rodapé -->
-    <footer class="rodape">
+    <footer id="rodape" class="rodape">
       <div class="rodape__conteudo">
         <div class="rodape__conteudo__links logo_rodape">
           <img
@@ -206,7 +206,9 @@
           <h3>Navegação</h3>
           <ul>
             <li class="rodape__conteudo__links__lista">
-              <a class="rodape__conteudo__links__link" href="#">Início</a>
+              <a class="rodape__conteudo__links__link" onclick="inicio()">
+                Início
+              </a>
             </li>
             <li class="rodape__conteudo__links__lista">
               <a class="rodape__conteudo__links__link" href="#">Galeria</a>
@@ -243,6 +245,10 @@
       </div>
     </footer>
     <!-- Fim do Rodapé -->
+
+    <!-- Caixa da Sobre nós Rodapé -->
+    <div id="about"></div>
+    <!-- Fim da caixa Sobre nós Rodapé -->
 
     <!-- Embaçamento da Tela -->
     <div id="blur" class="blur"></div>
@@ -392,7 +398,7 @@
     <!-- Fim da Caixa de Cadastro -->
 
     <!-- Caixa de Login -->
-    <div class="login" id="login">
+    <div id="login" class="login">
       <img class="login__logo" src="assets/img/quod-logo.png" alt="Logo QUOD" />
       <div class="botao">
         <a

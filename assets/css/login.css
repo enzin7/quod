@@ -40,6 +40,7 @@
 .botao-ativo-login {
   background-color: var(--cor-primaria);
   color: var(--cor-terciaria);
+  margin-bottom: -1px;
   padding-top: 0.7rem;
   box-shadow: 11px -11px 10px rgba(0, 0, 0, 0.09);
   z-index: 1;
