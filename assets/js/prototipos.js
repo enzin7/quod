@@ -100,7 +100,6 @@ document.getElementById("blur").addEventListener("click", () => {
 
     document.body.style.overflow = "auto";
     document.getElementById("blur").classList.remove("active");
-    document.getElementById("blur").classList.remove("menu");
 
     aberto = false;
   }
