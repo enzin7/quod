@@ -32,8 +32,6 @@ function abrirMenuHamb() {
     document.getElementById("cadastro").style.display = "none";
     document.getElementById("login").style.display = "none";
 
-    document.getElementById("blur").classList.add("menu");
-
     aberto = true;
   } else if (aberto) {
     document.getElementById("lista_menu").style.display = "none";
@@ -106,6 +104,10 @@ document.getElementById("blur").addEventListener("click", () => {
 
     aberto = false;
   }
+});
+
+main.addEventListener("click", () => {
+  document.getElementById("lista_menu").style.display = "none";
 });
 
 logoGitHub.addEventListener("mouseenter", () => {
