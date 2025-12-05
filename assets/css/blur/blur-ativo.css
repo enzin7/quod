@@ -1,6 +1,0 @@
-.blur.active {
-  pointer-events: auto;
-  cursor: pointer;
-  backdrop-filter: blur(8px) saturate(1.05);
-  -webkit-backdrop-filter: blur(8px) saturate(1.05);
-}

@@ -7,5 +7,9 @@
   transition: backdrop-filter 300ms ease, background 300ms ease;
 }
 
-
-
+.blur.active {
+  pointer-events: auto;
+  cursor: pointer;
+  backdrop-filter: blur(8px) saturate(1.05);
+  -webkit-backdrop-filter: blur(8px) saturate(1.05);
+}
