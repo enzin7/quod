@@ -1,0 +1,5 @@
+.about__mensagem__titulo__subtitulo {
+  color: var(--cor-cinza);
+  font-weight: normal;
+  margin-top: -0.5rem;
+}

@@ -1,0 +1,24 @@
+.conteudo__pesquisa__lupa {
+  align-items: center;
+  background-color: var(--cor-primaria);
+  border: none;
+  display: flex;
+  height: 2rem;
+  justify-content: center;
+}
+
+.conteudo__pesquisa__lupa:hover {
+  cursor: pointer;
+}
+
+.conteudo__pesquisa__lupa:focus-visible {
+  outline: 2px solid var(--cor-secundaria);
+  outline-offset: -1px;
+}
+
+@media screen and (min-width: 2000px) {
+  .conteudo__pesquisa__lupa {
+    height: 2rem;
+    width: 2rem;
+  }
+}

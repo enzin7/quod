@@ -9,16 +9,15 @@
   <body>
     <main class="cadastro">
       <img
+        class="cadastro__logo"
         src="assets/img/quod-logo.png"
         alt="Logo QUOD"
-        class="cadastro__logo"
       />
       <div class="botao">
         <a class="botao-cadastro-login botao-ativo-cadastro">Cadastre-se</a>
         <a
-          target="_parent"
-          onclick="abrirLogin()"
           class="botao-cadastro-login botao-desativado-cadastro"
+          onclick="abrirLogin()"
         >
           Login
         </a>
@@ -27,62 +26,77 @@
         <p class="cadastro__caixa__divicao">por email</p>
         <div class="cadastro__caixa__conteudo">
           <img
+            class="cadastro__caixa__png"
             src="./assets/img/usuario.png"
             alt="Usuário PNG"
-            class="cadastro__caixa__png"
           />
           <input
-            type="email"
-            placeholder="Nome de usuário"
             class="cadastro__caixa__conteudo__input"
+            type="text"
+            placeholder="Nome de usuário"
           />
         </div>
         <div class="cadastro__caixa__conteudo">
           <img
+            class="cadastro__caixa__png"
             src="./assets/img/email.png"
             alt="Email PNG"
-            class="cadastro__caixa__png"
           />
           <input
+            class="cadastro__caixa__conteudo__input"
             type="email"
             placeholder="E-mail"
-            class="cadastro__caixa__conteudo__input"
           />
         </div>
         <div class="cadastro__caixa__conteudo caixa-menor">
           <img
+            class="cadastro__caixa__png cadeado"
             src="./assets/img/cadeado.png"
             alt="Cadeado PNG"
-            class="cadastro__caixa__png cadeado"
           />
           <input
+            id="input_senha_cadastro"
+            class="cadastro__caixa__conteudo__input input-menor"
             type="password"
             placeholder="Senha"
-            class="cadastro__caixa__conteudo__input input-menor"
           />
           <img
-            src="./assets/img/visivel.png"
-            alt="Olho Aberto"
             class="cadastro__caixa__png olho-fechado"
+            id="olho_senha_cadastro"
+            src="./assets/img/olho-fechado.png"
+            alt="Olho Senha"
+            onclick="mostrarSenhaCadastro()"
           />
         </div>
         <div class="cadastro__caixa__check">
           <div class="cadastro__caixa__check__div">
-            <input type="checkbox" class="cadastro__caixa__check__input" />
-            <p class="cadastro__caixa__check__p">
-              Eu li e concordo com os
-              <a
-                href="#"
-                class="cadastro__caixa__conteudo__alternativas__link__links"
-                >termos de uso</a
-              >
-            </p>
+            <input
+              id="concordo"
+              class="cadastro__caixa__check__input"
+              type="checkbox"
+            />
+            <label for="concordo">
+              <p class="cadastro__caixa__check__p">
+                Eu li e concordo com os
+                <a
+                  class="cadastro__caixa__conteudo__alternativas__link__links"
+                  href="#"
+                  >termos de uso</a
+                >
+              </p>
+            </label>
           </div>
           <div class="cadastro__caixa__check__div">
-            <input type="checkbox" class="cadastro__caixa__check__input" />
-            <p class="cadastro__caixa__check__p cadastro-p">
-              Eu não quero receber novidades e promoções da por e-mail.
-            </p>
+            <input
+              id="promocoes"
+              class="cadastro__caixa__check__input"
+              type="checkbox"
+            />
+            <label for="promocoes">
+              <p class="cadastro__caixa__check__p cadastro-p">
+                Eu não quero receber novidades e promoções da por e-mail.
+              </p>
+            </label>
           </div>
         </div>
         <p class="cadastro__caixa__divicao">
@@ -137,8 +151,8 @@
           <p class="cadastro__caixa__conteudo__alternativas__link">
             Já tem conta?
             <a
-              href="login.html"
               class="cadastro__caixa__conteudo__alternativas__link__links"
+              onclick="abrirLogin()"
               >Login</a
             >
           </p>

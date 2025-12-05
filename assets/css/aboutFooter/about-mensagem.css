@@ -1,0 +1,51 @@
+.about__mensagem {
+  align-items: center;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+  display: flex;
+  gap: 1.2rem;
+  height: 28rem;
+  max-width: 60rem;
+  padding-left: 1.2rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .about__mensagem {
+    height: 32rem;
+    width: 55rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .about__mensagem {
+    height: 26rem;
+    width: 40rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about__mensagem {
+    height: 30rem;
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about__mensagem {
+    height: 29rem;
+    width: 23rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__mensagem {
+    height: 36.5rem;
+    width: 20rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about__mensagem {
+    width: 16rem;
+  }
+}

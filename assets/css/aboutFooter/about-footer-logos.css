@@ -1,0 +1,9 @@
+.logo-github,
+.logo-linkedin,
+.logo-instagram {
+  height: 2rem;
+}
+
+.logo-linkedin {
+  padding-right: 0.2rem;
+}

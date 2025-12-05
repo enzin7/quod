@@ -1,0 +1,4 @@
+.menu-hamburguer__ativo {
+  color: var(--cor-secundaria) !important;
+  font-weight: var(--fonte-weight);
+}

@@ -1,0 +1,16 @@
+.about__imagem {
+  border-radius: 0 5px 5px 0;
+  height: 28rem;
+}
+
+@media screen and (max-width: 1440px) {
+  .about__imagem {
+    height: 32rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .about__imagem {
+    display: none;
+  }
+}

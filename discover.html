@@ -38,67 +38,80 @@
               <a class="lista-menu__link" href="about.html">sobre</a>
             </li>
           </ul>
-          <img class="logo" src="./assets/img/quod-logo1.png" alt="Logo QUOD" />
-          <div class="principal">
-            <a
-              class="cabecalho__menu__links__link"
-              href="index.html"
-              title="clique para ir a 'home'"
-              >home</a
-            >
-            <a
-              class="cabecalho__menu__links__link navegacao_ativa"
-              href="discover.html"
-              title="Você está no 'descubra'"
-              >descubra</a
-            >
-            <a
-              class="cabecalho__menu__links__link"
-              href="construction.html"
-              title="clique para ir a 'loja'"
-              >loja</a
-            >
-            <a
-              class="cabecalho__menu__links__link"
-              href="construction.html"
-              title="clique para ir ao 'blog'"
-              >blog</a
-            >
-            <a
-              class="cabecalho__menu__links__link"
-              href="construction.html"
-              title="clique para ir ao 'destaques'"
-              >destaques</a
-            >
-            <a
-              class="cabecalho__menu__links__link"
-              href="about.html"
-              title="clique para ir ao 'sobre'"
-              >sobre</a
-            >
-          </div>
+          <img
+            class="cabecalho__logo"
+            src="./assets/img/quod-logo1.png"
+            alt="Logo QUOD"
+          />
+          <ul class="principal">
+            <li class="principal__item">
+              <a
+                class="cabecalho__menu__links__link"
+                href="index.html"
+                title="clique para ir a 'home'"
+                >home</a
+              >
+            </li>
+            <li class="principal__item">
+              <a
+                class="cabecalho__menu__links__link cabecalho__menu__links__link__ativo"
+                title="Você está no 'descubra'"
+                >descubra</a
+              >
+            </li>
+            <li class="principal__item">
+              <a
+                class="cabecalho__menu__links__link"
+                href="construction.html"
+                title="clique para ir a 'loja'"
+                >loja</a
+              >
+            </li>
+            <li class="principal__item">
+              <a
+                class="cabecalho__menu__links__link"
+                href="construction.html"
+                title="clique para ir ao 'blog'"
+                >blog</a
+              >
+            </li>
+            <li class="principal__item">
+              <a
+                class="cabecalho__menu__links__link"
+                href="construction.html"
+                title="clique para ir ao 'destaques'"
+                >destaques</a
+              >
+            </li>
+            <li class="principal__item">
+              <a
+                class="cabecalho__menu__links__link"
+                href="about.html"
+                title="clique para ir ao 'sobre'"
+                >sobre</a
+              >
+            </li>
+          </ul>
         </div>
-        <div class="cabecalho__menu__links">
-          <a
-            class="cabecalho__menu__links__link secundario"
-            onclick="abrirCadastro()"
-            >Cadastre-se</a
-          >
-          <a
-            class="cabecalho__menu__links__link botao_login"
-            onclick="abrirLogin()"
-            >Login</a
-          >
-        </div>
+        <ul class="cabecalho__menu__links">
+          <li class="principal__item">
+            <a class="cabecalho__botao-cadastro" onclick="abrirCadastro()"
+              >Cadastre-se</a
+            >
+          </li>
+          <li class="principal__item">
+            <a class="cabecalho__botao-login" onclick="abrirLogin()">Login</a>
+          </li>
+        </ul>
       </nav>
     </header>
     <!-- Fim do Cabeçalho -->
 
-    <main id="main" class="conteudo-descubra">
+    <main id="main" class="conteudo-discover">
       <section class="conteudo__pesquisa">
         <input
           class="conteudo__pesquisa__barra"
-          type="text"
+          type="search"
           placeholder="Pesquise as melhores fotos, pessoas, lugares..."
         />
         <button class="conteudo__pesquisa__lupa" title="Pesquisar">
@@ -190,9 +203,9 @@
     <!-- Rodapé -->
     <footer class="rodape">
       <div class="rodape__conteudo">
-        <div class="rodape__conteudo__links logo_rodape">
+        <div class="rodape__conteudo__links rodape__conteudo__imagem">
           <img
-            class="rodape__conteudo__links__imagem"
+            class="rodape__logo"
             src="assets/img/quod-logo1.png"
             alt="Logo Quod"
           />
@@ -381,21 +394,33 @@
         </div>
         <div class="cadastro__caixa__check">
           <div class="cadastro__caixa__check__div">
-            <input class="cadastro__caixa__check__input" type="checkbox" />
-            <p class="cadastro__caixa__check__p">
-              Eu li e concordo com os
-              <a
-                class="cadastro__caixa__conteudo__alternativas__link__links"
-                href="#"
-                >termos de uso</a
-              >
-            </p>
+            <input
+              id="concordo"
+              class="cadastro__caixa__check__input"
+              type="checkbox"
+            />
+            <label for="concordo">
+              <p class="cadastro__caixa__check__p">
+                Eu li e concordo com os
+                <a
+                  class="cadastro__caixa__conteudo__alternativas__link__links"
+                  href="#"
+                  >termos de uso</a
+                >
+              </p>
+            </label>
           </div>
           <div class="cadastro__caixa__check__div">
-            <input class="cadastro__caixa__check__input" type="checkbox" />
-            <p class="cadastro__caixa__check__p cadastro-p">
-              Eu não quero receber novidades e promoções da por e-mail.
-            </p>
+            <input
+              id="promocoes"
+              class="cadastro__caixa__check__input"
+              type="checkbox"
+            />
+            <label for="promocoes">
+              <p class="cadastro__caixa__check__p cadastro-p">
+                Eu não quero receber novidades e promoções da por e-mail.
+              </p>
+            </label>
           </div>
         </div>
         <p class="cadastro__caixa__divicao">
@@ -505,8 +530,14 @@
           />
         </div>
         <div class="login__caixa__check">
-          <input type="checkbox" class="login__caixa__check__input" />
-          <p class="login__caixa__check__p">me manter conectado</p>
+          <input
+            id="m_conectado"
+            type="checkbox"
+            class="login__caixa__check__input"
+          />
+          <label for="m_conectado">
+            <p class="login__caixa__check__p">me manter conectado</p>
+          </label>
         </div>
         <p class="login__caixa__divicao">
           ──────────────  ou  ────────────── <br />

@@ -1,0 +1,6 @@
+.botao {
+  align-items: center;
+  display: flex;
+  font-weight: var(--fonte-weight);
+  justify-content: center;
+}

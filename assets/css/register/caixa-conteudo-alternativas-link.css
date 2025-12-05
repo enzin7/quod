@@ -1,0 +1,11 @@
+.cadastro__caixa__conteudo__alternativas__link {
+  color: var(--cor-cinza);
+  font-size: 0.9rem;
+  font-weight: var(--fonte-weight);
+}
+
+@media screen and (min-width: 2000px) {
+  .cadastro__caixa__conteudo__alternativas__link {
+    font-size: 1.2rem;
+  }
+}

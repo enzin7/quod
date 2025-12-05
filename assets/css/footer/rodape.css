@@ -1,0 +1,13 @@
+.rodape {
+  box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.1);
+  color: var(--cor-terciaria);
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0;
+}
+
+@media screen and (min-width: 2000px) {
+  .rodape {
+    font-size: 1.2rem;
+  }
+}

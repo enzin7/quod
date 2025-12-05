@@ -1,0 +1,16 @@
+.cabecalho__menu__links {
+  display: flex;
+  gap: 1.6rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .cabecalho__menu__links {
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .cabecalho__menu__links {
+    align-items: center;
+  }
+}

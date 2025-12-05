@@ -115,6 +115,7 @@
 
 .login__caixa__check__p {
   font-size: 0.75rem;
+  cursor: pointer;
 }
 
 .login__caixa__divicao {

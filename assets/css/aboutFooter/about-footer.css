@@ -1,0 +1,11 @@
+.about {
+  align-items: center;
+  background-color: var(--cor-primaria);
+  border-radius: 5px;
+  display: none;
+  justify-content: center;
+  left: 50%;
+  position: fixed;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}

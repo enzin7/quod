@@ -1,0 +1,5 @@
+.conteudo-about__titulo__subtitulo {
+  color: var(--cor-cinza-sobre);
+  font-weight: var(--fonte-weight);
+  margin: -0.5rem 0 0.5rem 0;
+}

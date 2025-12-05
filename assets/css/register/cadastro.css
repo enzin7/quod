@@ -1,0 +1,10 @@
+.cadastro {
+  align-items: center;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  left: 50%;
+  position: fixed;
+  top: 45%;
+  transform: translate(-50%, -50%);
+}

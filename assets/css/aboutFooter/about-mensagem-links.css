@@ -1,0 +1,35 @@
+.about__mensagem__links {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+@media screen and (max-width: 920px) {
+  .about__mensagem__links {
+    padding-left: 14.5rem;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .about__mensagem__links {
+    padding-left: 9.7rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about__mensagem__links {
+    padding-left: 5.2rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .about__mensagem__links {
+    padding-left: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about__mensagem__links {
+    padding-left: 2.2rem;
+  }
+}

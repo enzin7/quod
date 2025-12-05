@@ -1,0 +1,11 @@
+.conteudo-descubra__galeria__colunas__titulo {
+  font-weight: var(--fonte-weight);
+  margin-bottom: 0.5rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .conteudo-descubra__galeria__colunas__titulo {
+    font-size: 1.5rem;
+    font-weight: var(--fonte-weight);
+  }
+}

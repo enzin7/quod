@@ -1,0 +1,17 @@
+.principal {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+
+@media screen and (max-width: 1110px) {
+  .principal {
+    gap: 1.3rem;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .principal {
+    display: none;
+  }
+}

@@ -1,0 +1,10 @@
+.conteudo__pesquisa {
+  align-items: center;
+  display: flex;
+  margin-top: 4rem;
+}
+
+.conteudo__pesquisa:hover {
+  transform: scale(1.03);
+  transition: 0.5s;
+}

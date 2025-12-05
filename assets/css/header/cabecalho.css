@@ -1,0 +1,15 @@
+.cabecalho {
+  background-color: var(--cor-primaria);
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+  color: var(--cor-terciaria);
+  height: 3.75rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+@media screen and (min-width: 2000px) {
+  .cabecalho {
+    height: 4.75rem;
+  }
+}

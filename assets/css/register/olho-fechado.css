@@ -1,0 +1,5 @@
+.olho-fechado {
+  border-left: 1px solid var(--cor-borda-login-cadastro);
+  border-right: none;
+  cursor: pointer;
+}

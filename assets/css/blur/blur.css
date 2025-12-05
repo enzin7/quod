@@ -1,0 +1,11 @@
+.blur {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
+  transition: backdrop-filter 300ms ease, background 300ms ease;
+}
+
+
+

@@ -1,0 +1,14 @@
+.conteudo-descubra__galeria__colunas__fotos {
+  background-color: var(--cor-terciaria);
+  border-radius: 5px;
+  flex-shrink: 0;
+  height: 15rem;
+  width: 17rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .conteudo-descubra__galeria__colunas__fotos {
+    height: 17rem;
+    width: 19rem;
+  }
+}

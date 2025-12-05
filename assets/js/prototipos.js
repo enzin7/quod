@@ -21,15 +21,13 @@ function abrirSobre() {
     document.body.style.overflow = "hidden";
     document.getElementById("blur").classList.add("active");
 
-    setTimeout(() => {
-      aberto = true;
-    }, 500);
+    aberto = true;
   }
 }
 
 function abrirMenuHamb() {
   if (!aberto) {
-    document.getElementById("lista_menu").style.display = "block";
+    document.getElementById("lista_menu").style.display = "flex";
     document.getElementById("about").style.display = "none";
     document.getElementById("cadastro").style.display = "none";
     document.getElementById("login").style.display = "none";
@@ -91,7 +89,7 @@ function irAoMeio() {
 
 function galeriaDescubra() {
   const descubraGaleria = document.getElementById("galeria_descubra");
-  const comeco = descubraGaleria.offsetTop - 15;
+  const comeco = descubraGaleria.offsetTop - 70;
   window.scrollTo({ top: comeco, behavior: "smooth" });
 }
 

@@ -1,0 +1,11 @@
+@media screen and (max-width: 425px) {
+  .input-menor {
+    width: 13.5rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .input-menor {
+    width: 10.5rem;
+  }
+}

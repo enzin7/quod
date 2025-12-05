@@ -1,0 +1,5 @@
+.cadastro__caixa__check__div {
+  display: flex;
+  gap: 3px;
+  justify-content: start;
+}

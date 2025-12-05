@@ -1,0 +1,35 @@
+.cadastro__caixa__conteudo__input {
+  background-color: var(--cor-fundo-placeholder-cadastro-login);
+  border: none;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.05);
+  font-family: var(--fonte-principal);
+  font-size: 0.9rem;
+  outline: none;
+  padding: 0.7rem 0.4rem;
+  width: 20.15rem;
+}
+
+.cadastro__caixa__conteudo__input::placeholder {
+  font-weight: var(--fonte-weight);
+  opacity: 0.6;
+  text-align: start;
+  font-size: 0.82rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .cadastro__caixa__conteudo__input {
+    width: 24rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cadastro__caixa__conteudo__input {
+    width: 15.8rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cadastro__caixa__conteudo__input {
+    width: 12.8rem;
+  }
+}

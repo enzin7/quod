@@ -10,7 +10,11 @@
     <main class="login">
       <img src="assets/img/quod-logo.png" alt="Logo QUOD" class="login__logo" />
       <div class="botao">
-        <a href="register.html" class="botao-login-cadastro botao-desativado-login">Cadastre-se</a>
+        <a
+          href="register.html"
+          class="botao-login-cadastro botao-desativado-login"
+          >Cadastre-se</a
+        >
         <a class="botao-login-cadastro botao-ativo-login">Login</a>
       </div>
       <div class="login__caixa">
@@ -44,8 +48,14 @@
           />
         </div>
         <div class="login__caixa__check">
-          <input type="checkbox" class="login__caixa__check__input" />
-          <p class="login__caixa__check__p">me manter conectado</p>
+          <input
+            id="m_conectado"
+            type="checkbox"
+            class="login__caixa__check__input"
+          />
+          <label for="m_conectado">
+            <p class="login__caixa__check__p">me manter conectado</p>
+          </label>
         </div>
         <p class="login__caixa__divicao">
           ──────────────  ou  ────────────── <br />

@@ -1,0 +1,31 @@
+.about__mensagem__conteudo {
+  align-items: start;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  justify-content: start;
+}
+
+@media screen and (min-width: 2000px) {
+  .about__mensagem__conteudo {
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (max-width: 920px) {
+  .about__mensagem__conteudo {
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .about__mensagem__conteudo {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .about__mensagem__conteudo {
+    font-size: 0.8rem;
+  }
+}

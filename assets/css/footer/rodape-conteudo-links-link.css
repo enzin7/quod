@@ -1,0 +1,16 @@
+.rodape__conteudo__links__link {
+  color: var(--cor-terciaria);
+  cursor: pointer;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.rodape__conteudo__links__link:hover {
+  color: var(--cor-secundaria);
+  font-weight: var(--fonte-weight);
+}
+
+.rodape__conteudo__links__link:focus-visible {
+  outline: 2px solid var(--cor-secundaria);
+  outline-offset: 1px;
+}

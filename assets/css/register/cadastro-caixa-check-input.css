@@ -1,0 +1,10 @@
+.cadastro__caixa__check__input {
+  accent-color: var(--cor-secundaria);
+  cursor: pointer;
+  margin-left: -0.3rem;
+}
+
+.cadastro__caixa__check__input:focus-visible {
+  outline: 1px solid var(--cor-secundaria);
+  outline-offset: 1px;
+}

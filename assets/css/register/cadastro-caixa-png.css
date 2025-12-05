@@ -1,0 +1,5 @@
+.cadastro__caixa__png {
+  border-right: 1px solid var(--cor-borda-login-cadastro);
+  height: 1.5rem;
+  padding: 0.61rem 0.4rem;
+}

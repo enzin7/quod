@@ -1,0 +1,9 @@
+.lista-menu__link {
+  color: var(--cor-terciaria);
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.lista-menu__link:hover {
+  color: var(--cor-secundaria);
+}

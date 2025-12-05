@@ -1,0 +1,22 @@
+.copyI {
+  margin-bottom: -1rem;
+}
+
+.copyII {
+  display: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .copyI {
+    display: none;
+  }
+
+  .copyII {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -1.5rem;
+    text-align: center;
+  }
+}
+

@@ -1,0 +1,30 @@
+.cabecalho__menu__links__link {
+  align-content: center;
+  border-bottom: 3px solid transparent;
+  color: var(--cor-terciaria);
+  cursor: pointer;
+  font-size: 0.84rem;
+  font-weight: var(--fonte-weight);
+  padding-bottom: 1rem;
+  text-decoration: none;
+  transition: 0.2s ease-in-out;
+}
+
+.cabecalho__menu__links__link__ativo {
+  border-color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__links__link:hover {
+  border-color: var(--cor-secundaria);
+}
+
+.cabecalho__menu__links__link:focus-visible {
+  outline: 2px solid var(--cor-secundaria);
+  outline-offset: 1px;
+}
+
+@media screen and (min-width: 2000px) {
+  .cabecalho__menu__links__link {
+    font-size: 1.2rem;
+  }
+}

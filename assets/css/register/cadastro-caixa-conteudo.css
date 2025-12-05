@@ -1,0 +1,32 @@
+.cadastro__caixa__conteudo {
+  align-items: center;
+  border: 1px solid var(--cor-borda-login-cadastro);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  width: 23rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .cadastro__caixa__conteudo {
+    width: 27rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cadastro__caixa__conteudo {
+    width: 21rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cadastro__caixa__conteudo {
+    width: 19rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cadastro__caixa__conteudo {
+    width: 16rem;
+  }
+}

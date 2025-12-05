@@ -1,0 +1,8 @@
+.rodape__conteudo__links {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  justify-content: center;
+  text-align: center;
+}

@@ -1,0 +1,24 @@
+.cabecalho__logo {
+  cursor: pointer;
+  height: 3.75rem;
+  padding-right: 6rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .cabecalho__logo {
+    height: 5rem;
+    margin-top: -0.3rem;
+  }
+}
+
+@media screen and (max-width: 1110px) {
+  .cabecalho__logo {
+    padding: 0;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .cabecalho__logo {
+    margin-left: -10px;
+  }
+}

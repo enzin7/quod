@@ -1,0 +1,33 @@
+.botao-cadastro-login {
+  background-color: var(--cor-secundaria);
+  color: var(--cor-primaria);
+  cursor: pointer;
+  padding: 0.6rem;
+  text-align: center;
+  text-decoration: none;
+  width: 11.81rem;
+}
+
+@media screen and (min-width: 2000px) {
+  .botao-cadastro-login {
+    width: 13.81rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .botao-cadastro-login {
+    width: 10.8rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .botao-cadastro-login {
+    width: 9.81rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .botao-cadastro-login {
+    width: 8.05rem;
+  }
+}

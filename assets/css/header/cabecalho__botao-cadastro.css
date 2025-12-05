@@ -1,0 +1,22 @@
+.cabecalho__botao-cadastro {
+  align-content: center;
+  background: none;
+  border: none;
+  color: var(--cor-terciaria);
+  cursor: pointer;
+  font-family: var(--fonte-principal);
+  font-size: 0.84rem;
+  font-weight: var(--fonte-weight);
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+
+.cabecalho__botao-cadastro:hover {
+  color: var(--cor-secundaria);
+}
+
+@media screen and (max-width: 385px) {
+  .cabecalho__botao-cadastro {
+    display: none;
+  }
+}

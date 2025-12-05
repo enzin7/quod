@@ -1,0 +1,38 @@
+.conteudo__pesquisa__barra {
+  background-color: var(--cor-terciaria);
+  border: none;
+  color: var(--cor-primaria);
+  font-family: var(--fonte-principal);
+  font-size: 0.8rem;
+  height: 1.6rem;
+  outline: none;
+  padding-left: 0.5rem;
+  width: clamp(20rem, 50vw, 50rem);
+}
+
+.conteudo__pesquisa__barra::placeholder {
+  color: var(--cor-primaria);
+  font-weight: var(--fonte-weight);
+}
+
+@media screen and (min-width: 2000px) {
+  .conteudo__pesquisa__barra {
+    font-size: 1rem;
+    height: 2rem;
+    width: 100rem;
+  }
+}
+
+@media screen and (max-width: 385px) {
+  .conteudo__pesquisa__barra {
+    font-size: 0.75rem;
+    width: 19rem;
+  }
+}
+
+@media screen and (max-width: 350px) {
+  .conteudo__pesquisa__barra {
+    font-size: 0.6rem;
+    width: 15.6rem;
+  }
+}

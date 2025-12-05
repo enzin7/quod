@@ -4,19 +4,23 @@
 }
 
 .social-botoes {
-  width: 100px;
-  height: 40px;
-  border-radius: 5px;
-  display: flex;
   align-items: center;
-  justify-content: center;
+  border-radius: 5px;
   cursor: pointer;
+  display: flex;
+  height: 40px;
+  justify-content: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 100px;
 }
 
 .social-botoes:hover {
-  transform: scale(1.05);
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+}
+
+.botao-twitter {
+  background-color: var(--cor-terciaria);
 }
 
 .botao-google {
@@ -25,8 +29,4 @@
 
 .botao-facebook {
   background-color: #3b5998;
-}
-
-.botao-twitter {
-  background-color: var(--cor-terciaria);
 }

@@ -1,0 +1,9 @@
+.rodape__conteudo__links__slogan {
+  font-weight: var(--fonte-weight);
+}
+
+@media screen and (max-width: 1024px) {
+  .rodape__conteudo__links__slogan {
+    margin-bottom: -1.8rem;
+  }
+}

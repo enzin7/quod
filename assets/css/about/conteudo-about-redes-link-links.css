@@ -1,0 +1,19 @@
+.conteudo-about__redes__link__links {
+  align-items: center;
+  border: 2px solid var(--cor-terciaria);
+  border-radius: 5px;
+  color: var(--cor-terciaria);
+  display: flex;
+  justify-content: center;
+  padding: 0.5rem 2rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.conteudo-about__redes__link__links:hover,
+.conteudo-about__redes__link__links:focus-visible {
+  background-color: var(--cor-secundaria);
+  border: 3px solid var(--cor-secundaria);
+  color: var(--cor-primaria);
+  transform: scale(1.05);
+}

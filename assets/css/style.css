@@ -1,16 +1,123 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 
-@import url(header.css);
-@import url(main.css);
-@import url(search-bar.css);
-@import url(footer.css);
-@import url(about-footer.css);
-@import url(about.css);
-@import url(discover.css);
+/* ABOUT */
+@import url(../css/about/about-imagem.css);
+@import url(../css/about/about-logo-instagram.css);
+@import url(../css/about/about-logo-linkedin.css);
+@import url(../css/about/about-redes-link-links-imagem.css);
+@import url(../css/about/about-redes-link-links.css);
+@import url(../css/about/about-redes-link.css);
+@import url(../css/about/about-redes-titulo.css);
+@import url(../css/about/about-redes.css);
+@import url(../css/about/about-subtitulo.css);
+@import url(../css/about/about-titulo-font.css);
+@import url(../css/about/about-titulo.css);
+@import url(../css/about/conteudo-about-redes-link-links.css);
+/* ABOUT */
+
+/* ABOUT FOOTER */
+@import url(../css/aboutFooter/about-footer-logos.css);
+@import url(../css/aboutFooter/about-footer.css);
+@import url(../css/aboutFooter/about-imagem.css);
+@import url(../css/aboutFooter/about-mensagem-conteudo.css);
+@import url(../css/aboutFooter/about-mensagem-link-links.css);
+@import url(../css/aboutFooter/about-mensagem-links.css);
+@import url(../css/aboutFooter/about-mensagem-subtitulo.css);
+@import url(../css/aboutFooter/about-mensagem-texto.css);
+@import url(../css/aboutFooter/about-mensagem-titulo.css);
+@import url(../css/aboutFooter/about-mensagem.css);
+/* ABOUT FOOTER */
+
+/* BLUR */
+@import url(../css/blur/blur-ativo.css);
+@import url(../css/blur/blur-menu.css);
+@import url(../css/blur/blur.css);
+/* BLUR */
+
+/* BODY */
+@import url(../css/body/conteudo-about.css);
+@import url(../css/body/conteudo-discover.css);
+@import url(../css/body/conteudo-home.css);
+/* BODY */
+
+/* DISCOVER */
+@import url(../css/discover/descubra-galeria-colunas-fotos.css);
+@import url(../css/discover/descubra-galeria-colunas-scroll.css);
+@import url(../css/discover/descubra-galeria-colunas-titulo.css);
+@import url(../css/discover/descubra-galeria-colunas.css);
+@import url(../css/discover/descubra-galeria.css);
+/* DISCOVER */
+
+/* FOOTER */
+@import url(../css/footer/contato.css);
+@import url(../css/footer/copy.css);
+@import url(../css/footer/navegacao-rodape.css);
+@import url(../css/footer/rodape-conteudo-imagem.css);
+@import url(../css/footer/rodape-conteudo-links-link.css);
+@import url(../css/footer/rodape-conteudo-links.css);
+@import url(../css/footer/rodape-conteudo-lista.css);
+@import url(../css/footer/rodape-conteudo-marca.css);
+@import url(../css/footer/rodape-conteudo-slogan.css);
+@import url(../css/footer/rodape-conteudo.css);
+@import url(../css/footer/rodape-logo.css);
+@import url(../css/footer/rodape.css);
+/* FOOTER */
+
+/* HEADER */
+@import url(./header/cabecalho__botao-cadastro.css);
+@import url(./header/cabecalho__botao-login.css);
+@import url(./header/cabecalho-logo.css);
+@import url(./header/cabecalho-menu-links-link.css);
+@import url(./header/cabecalho-menu-links.css);
+@import url(./header/cabecalho-menu.css);
+@import url(./header/cabecalho.css);
+@import url(./header/lista-menu-item.css);
+@import url(./header/lista-menu-link.css);
+@import url(./header/lista-menu.css);
+@import url(./header/menu-hamburguer-ativo.css);
+@import url(./header/menu-hamburguer-botao.css);
+@import url(./header/menu-hamburguer.css);
+@import url(./header/principal-item.css);
+@import url(./header/principal.css);
+/* HEADER */
+
+/* LOGIN E REGISTER */
+@import url(../css/login-register.css);
+/* LOGIN E REGISTER */
+
+/* REGISTER */
+@import url(../css/register/botao-ativo-cadastro.css);
+@import url(../css/register/botao-cadastro-login.css);
+@import url(../css/register/botao-desativado-cadastro.css);
+@import url(../css/register/botao.css);
+@import url(../css/register/cadastro-caixa-check-div.css);
+@import url(../css/register/cadastro-caixa-check-input.css);
+@import url(../css/register/cadastro-caixa-check-p.css);
+@import url(../css/register/cadastro-caixa-check.css);
+@import url(../css/register/cadastro-caixa-conteudo-input.css);
+@import url(../css/register/cadastro-caixa-conteudo.css);
+@import url(../css/register/cadastro-caixa-divicao.css);
+@import url(../css/register/cadastro-caixa-png.css);
+@import url(../css/register/cadastro-caixa.css);
+@import url(../css/register/cadastro-logo.css);
+@import url(../css/register/cadastro-p.css);
+@import url(../css/register/cadastro.css);
+@import url(../css/register/caixa-conteudo-alternativas-link-links.css);
+@import url(../css/register/caixa-conteudo-alternativas-link.css);
+@import url(../css/register/caixa-conteudo-alternativas.css);
+@import url(../css/register/input-menor.css);
+@import url(../css/register/olho-fechado.css);
+/* REGISTER */
+
+/* SEARCH BAR */
+@import url(../css/searchBar/conteudo-pesquisa-barra.css);
+@import url(../css/searchBar/conteudo-pesquisa-lupa.css);
+@import url(../css/searchBar/conteudo-pesquisa.css);
+/* SEARCH BAR */
+
 @import url(login.css);
-@import url(register.css);
 @import url(login-register.css);
-@import url(blur.css);
+@import url(register.css);
 
 :root {
   --fonte-principal: "Poppins", sans-serif;

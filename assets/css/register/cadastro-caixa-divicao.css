@@ -1,0 +1,29 @@
+.cadastro__caixa__divicao {
+  color: var(--cor-cinza);
+  font-weight: var(--fonte-weight);
+  text-align: center;
+}
+
+@media screen and (min-width: 2000px) {
+  .cadastro__caixa__divicao {
+    font-size: 1.186rem;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .cadastro__caixa__divicao {
+    font-size: 0.9rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .cadastro__caixa__divicao {
+    font-size: 0.62rem;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .cadastro__caixa__divicao {
+    font-size: 0.7rem;
+  }
+}
